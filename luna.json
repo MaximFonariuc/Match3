@@ -1,7 +1,7 @@
 {
     "version": "6.4.0",
     "projectId": "ad3586bc31db38c4aacef3ce2c200e17",
-    "applicationID": 0,
+    "applicationID": 33413,
     "creativeName": "New",
     "pgServer": "EU",
     "window": {
@@ -38673,6 +38673,16 @@
                     },
                     {
                         "name": "DestroyImmediate",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "EndCardSetScale",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Awake",
                         "excluded": false
                     }
                 ]

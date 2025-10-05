@@ -1,5 +1,5 @@
 /**
- * @version 1.0.9409.37767
+ * @version 1.0.9409.38301
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -3502,6 +3502,31 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
         }
     });
     /*EndCardPortraitAnimationType end.*/
+
+    /*EndCardSetScale start.*/
+    Bridge.define("EndCardSetScale", {
+        inherits: [UnityEngine.MonoBehaviour],
+        methods: {
+            /*EndCardSetScale.Awake start.*/
+            /**
+             * This script and method is needed because EndCardController.cs is running [ExecuteInEditMode]
+             meaning the Start method is already called, and will not be called going into play mode.
+             *
+             * @instance
+             * @private
+             * @this EndCardSetScale
+             * @memberof EndCardSetScale
+             * @return  {void}
+             */
+            Awake: function () {
+                this.transform.localScale = pc.Vec3.ZERO.clone();
+            },
+            /*EndCardSetScale.Awake end.*/
+
+
+        }
+    });
+    /*EndCardSetScale end.*/
 
     /*Utils.MonoSingleton$1 start.*/
     Bridge.define("Utils.MonoSingleton$1", function (T) { return {
@@ -7068,6 +7093,10 @@ Bridge.rValue(                    popup).Setup(settings);
     /*EndCardPortraitAnimationType start.*/
     $m("EndCardPortraitAnimationType", function () { return {"att":257,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"None","is":true,"t":4,"rt":EndCardPortraitAnimationType,"sn":"None","box":function ($v) { return Bridge.box($v, EndCardPortraitAnimationType, System.Enum.toStringFn(EndCardPortraitAnimationType));}},{"a":2,"n":"Scale","is":true,"t":4,"rt":EndCardPortraitAnimationType,"sn":"Scale","box":function ($v) { return Bridge.box($v, EndCardPortraitAnimationType, System.Enum.toStringFn(EndCardPortraitAnimationType));}},{"a":2,"n":"SlideBottomToTop","is":true,"t":4,"rt":EndCardPortraitAnimationType,"sn":"SlideBottomToTop","box":function ($v) { return Bridge.box($v, EndCardPortraitAnimationType, System.Enum.toStringFn(EndCardPortraitAnimationType));}},{"a":2,"n":"SlideTopToBottom","is":true,"t":4,"rt":EndCardPortraitAnimationType,"sn":"SlideTopToBottom","box":function ($v) { return Bridge.box($v, EndCardPortraitAnimationType, System.Enum.toStringFn(EndCardPortraitAnimationType));}}]}; }, $n);
     /*EndCardPortraitAnimationType end.*/
+
+    /*EndCardSetScale start.*/
+    $m("EndCardSetScale", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[1].Void}]}; }, $n);
+    /*EndCardSetScale end.*/
 
     /*ScreenOrientationType start.*/
     $m("ScreenOrientationType", function () { return {"att":257,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Landscape","is":true,"t":4,"rt":ScreenOrientationType,"sn":"Landscape","box":function ($v) { return Bridge.box($v, ScreenOrientationType, System.Enum.toStringFn(ScreenOrientationType));}},{"a":2,"n":"Portrait","is":true,"t":4,"rt":ScreenOrientationType,"sn":"Portrait","box":function ($v) { return Bridge.box($v, ScreenOrientationType, System.Enum.toStringFn(ScreenOrientationType));}},{"a":2,"n":"Undefined","is":true,"t":4,"rt":ScreenOrientationType,"sn":"Undefined","box":function ($v) { return Bridge.box($v, ScreenOrientationType, System.Enum.toStringFn(ScreenOrientationType));}}]}; }, $n);

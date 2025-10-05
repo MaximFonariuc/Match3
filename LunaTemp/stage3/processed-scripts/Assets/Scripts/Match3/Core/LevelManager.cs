@@ -1,0 +1,108 @@
+using System.Collections;
+using System.Collections.Generic;
+using Match3.Settings;
+using Scripts;
+using Settings;
+using TMPro;
+using UnityEngine;
+using Utils;
+
+namespace Match3.Core
+{
+    public partial class LevelManager : MonoSingleton<LevelManager>
+    {
+        [SerializeField] private TMP_Text _movesCountText;
+        [SerializeField] private Transform _tasksParent;
+        [SerializeField] private SceneTransition _levelComplete;
+        [SerializeField] private GameObject _disableBoard;
+        [SerializeField] private Level _currentLevel;
+        [SerializeField] private LevelTaskBox _boxPrefab;
+        private bool _levelCompleted;
+        private static int _missionCompetedCount;
+
+        private int _movesCount;
+        private List<LevelTaskBox> _taskBoxes = new List<LevelTaskBox>();
+        
+        public void SetupCurrentMovesText()
+        {
+            _movesCount -= 1;
+            _movesCountText.text = _movesCount.ToString();
+        }
+
+        public void SetupMission()
+        {
+            _missionCompetedCount++;
+            AddProgress(1);
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+            
+            foreach (var mission in _currentLevel.Missions)
+            {
+                var taskBox = Instantiate(_boxPrefab, _tasksParent);
+                taskBox.Setup(new LevelTaskBoxSettings
+                {
+                    TileSprite = mission.TileType,
+                    TileCount = mission.TargetCount,
+                    CurrentTilerCount = 0
+                });
+                _taskBoxes.Add(taskBox);
+            }
+
+            _movesCount = _currentLevel.TotalMoves;
+            _movesCountText.text = _movesCount.ToString();
+
+            InitProgressBar();
+        }
+        
+        private void Update()
+        {
+            if (!_levelCompleted)
+            {
+                CheckLevelCompletion();
+            }
+        }
+
+        public void UpdateDestroyedTilesCount(TileTypeData tileType, int destroyedCount)
+        {
+            foreach (var taskBox in _taskBoxes)
+            {
+                taskBox.CheckTask(tileType, destroyedCount);
+            }
+        }
+
+        private void CheckLevelCompletion()
+        {
+            if (_missionCompetedCount == _currentLevel.Missions.Count)
+            {
+                _disableBoard.SetActive(true);
+                _levelCompleted = true;
+                StartCoroutine(ShowLevelCompletionScreen());
+            }
+            if (_movesCount <= 0 && !_levelCompleted)
+            {
+                _disableBoard.SetActive(true);
+                _levelCompleted = true;
+                StartCoroutine(ShowLevelUncompletionScreen());
+            }
+        }
+
+        private IEnumerator ShowLevelCompletionScreen()
+        {
+            yield return new WaitForSeconds(2f);
+            _levelComplete.PerformTransition();
+            _missionCompetedCount = 0;
+            Debug.Log("Level Completed!");
+        }
+        
+        private IEnumerator ShowLevelUncompletionScreen()
+        {
+            yield return new WaitForSeconds(2f);
+            _levelComplete.PerformTransition();
+            _missionCompetedCount = 0;
+            Debug.Log("Level Uncompleted!");
+        }
+    }
+}

@@ -1,0 +1,403 @@
+[ error ] $Failed to get user data from Playground:
+ RequestFailedException : 401 
+ Response: {"error":"You need to sign in or sign up before continuing."} 
+ Error: HTTP/1.1 401 Unauthorized  
+
+[ error ] $Failed to get Creatives data from Playground:
+ RequestFailedException : 401 
+ Response: {"error":"You need to sign in or sign up before continuing."} 
+ Error: HTTP/1.1 401 Unauthorized  
+
+report@config:load 22.78
+Authorized using stored user info.
+report@account:authorize 4.66
+stderr: "rm" �� ���� ����७��� ��� ���譥�
+��������, �ᯮ��塞�� �ணࠬ��� ��� ������ 䠩���.
+
+Exporting assets from Unity.........
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+report@unity:export 6057.32
+report@config:load 16.63
+Using D:/Git/SoloProjects/Match3/Assets/Fonts/FredokaOne-Regular.ttf file to generate an atlas for FredokaOne-Regular[27386] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Using D:/Git/SoloProjects/Match3/Assets/InteractiveEndCardBuilder/EndCardAssets/ArchivoNarrow-Regular.ttf file to generate an atlas for ArchivoNarrow-Regular[27238] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Using D:/Git/SoloProjects/Match3/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[46692] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Using D:/Git/SoloProjects/Match3/Assets/Scripts/InteractiveEndCardBuilder/EndCardAssets/ArchivoNarrow-Regular.ttf file to generate an atlas for ArchivoNarrow-Regular[46410] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at D:/Git/SoloProjects/Match3/LunaTemp/stage1/tmp/fonts/LiberationSans-46692/output_0.png (56kb)
+Combined 97 glyphs into bitmap texture at D:/Git/SoloProjects/Match3/LunaTemp/stage1/tmp/fonts/FredokaOne-Regular-27386/output_0.png (62kb)
+Combined 97 glyphs into bitmap texture at D:/Git/SoloProjects/Match3/LunaTemp/stage1/tmp/fonts/ArchivoNarrow-Regular-27238/output_0.png (52kb)
+Combined 97 glyphs into bitmap texture at D:/Git/SoloProjects/Match3/LunaTemp/stage1/tmp/fonts/ArchivoNarrow-Regular-46410/output_0.png (52kb)
+Found custom rules for texture Assets/Fonts/FredokaOne-Regular SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/Fonts/FredokaOne-Regular SDF.asset","isOverride":true}
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
+Resources:
+{}
+report@assets:stage2 2815.81
+report@assets:stage3 148.39
+[ Stage2 ] Assets postprocessed and bundled successfully
+report@config:unity 0.09
+report@config:load 26.99
+report@config:unity 0.05
+report@code:compose 75.42
+Authorized using stored user info.
+report@account:authorize 1.79
+Версия MSBuild 17.14.18+a338add32 для .NET Framework
+
+Сборка начата 05.10.2025 20:53:48.
+
+
+
+Проект "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" в узле 1 (целевые объекты Rebuild).
+
+CoreClean:
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" удаляется.
+
+  Файл "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" удаляется.
+
+GenerateTargetFrameworkMonikerAttribute:
+Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+
+CoreCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_62;LUNA_IS_PRESENT /highentropyva+ /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\GameManager.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\InteractiveEndCardBuilder\Scripts\ButtonAnimationType.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\InteractiveEndCardBuilder\Scripts\EndCardClickableOptionsType.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\InteractiveEndCardBuilder\Scripts\EndCardLandscapeAnimationType.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\InteractiveEndCardBuilder\Script
+s\EndCardPortraitAnimationType.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\InteractiveEndCardBuilder\Scripts\EndCardSetScale.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\InteractiveEndCardBuilder\Scripts\ExampleEndCardCallScript.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\InteractiveEndCardBuilder\Scripts\ScreenOrientationType.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Match.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Move.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\TileDataMatrixUtility.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\InputBridge.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\LevelSelectionManager.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Rows\Row.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Rows\Tile.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Settings\LevelsData.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Settings\TileTypeData.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Settings\TileTypeDatas.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\TileData.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Navigation\NavigationController.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Navigation\PopupSystem.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\PlayableSettings.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\SaveManager.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Settings\PrefabSet.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Settings\SettingsProvider.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\TargetFrameRateSetter.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\BaseButton.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Panels\EmptyPanel.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Panels\Panel.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\BasePopup.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Prefabs\BasePrefabs.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\DefaultScreen.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\LevelScreen.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\AnimatedButton.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\BackgroundMusic.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\ColorSwapper.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\Fader.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\InitialPlayerPrefs.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\LevelScene.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\MusicButton.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\MusicManager.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\MuteBackgroundMusic.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\PlayPopup.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\PlayPopupOpener.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\Popup.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\PopupOpener.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\SceneTransition.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\SoundButton.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\SoundManager.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\SpinWheel.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\SpriteSwapper.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\TintedButton.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\UtilsGUI\Transition.cs D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Utils\MonoSingleton.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Navigation\NavigationController.cs(12,45): warning CS0649: Полю "NavigationController._canvas" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(189,42): warning CS0649: Полю "EndCardController._endCardPortraitAnimationType" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(207,39): warning CS0649: Полю "EndCardController._CTAButtonAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(10,49): warning CS0649: Полю "MainScreen._settingsButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(9,41): warning CS0649: Полю "LevelManager._progressSlider" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(14,40): warning CS0649: Полю "StartGamePopup._middleStarImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(9,49): warning CS0649: Полю "MainScreen._startButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(13,40): warning CS0649: Полю "StartGamePopup._leftStarImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(196,22): warning CS0649: Полю "EndCardController._backgroundImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(19,47): warning CS0649: Полю "LevelManager._boxPrefab" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(18,40): warning CS0649: Полю "LevelButton._currentStateColor" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(16,40): warning CS0649: Полю "LevelButton._levelSprite" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(192,43): warning CS0649: Полю "EndCardController._endCardLandscapeAnimationType" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(14,43): warning CS0649: Полю "LevelManager._movesCountText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(12,49): warning CS0649: Полю "MainScreen._spinWheelButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(23,48): warning CS0649: Полю "Board._swappingOverlay" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(15,41): warning CS0649: Полю "LevelButton._button" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(199,37): warning CS0649: Полю "EndCardController._ScreenCTAButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(17,45): warning CS0649: Полю "LevelManager._disableBoard" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(33,21): warning CS0649: Полю "EndCardController._buttonTexture" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(202,35): warning CS0649: Полю "EndCardController._maskIcon" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(15,49): warning CS0649: Полю "MainScreen._pauseButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(14,49): warning CS0649: Полю "MainScreen._helpButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(19,45): warning CS0649: Полю "LevelButton._shine" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(201,35): warning CS0649: Полю "EndCardController._EndCardDescriptionTextText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(11,36): warning CS0649: Полю "LevelTaskBox._tileImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(18,40): warning CS0649: Полю "LevelManager._currentLevel" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(21,21): warning CS0649: Полю "EndCardController._backgroundTexture" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(203,44): warning CS0649: Полю "EndCardController._iconRect" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(11,41): warning CS0649: Полю "LevelManager._activeStarSprite" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(21,46): warning CS0649: Полю "LevelButton._stars" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(11,40): warning CS0649: Полю "StartGamePopup._disabledColor" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(10,40): warning CS0649: Полю "StartGamePopup._enabledColor" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(19,47): warning CS0649: Полю "Board._levelManager" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(13,49): warning CS0649: Полю "MainScreen._infoButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\PlayableSettings.cs(11,35): warning CS0649: Полю "PlayableSettings.m_UseCTAScreen" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(200,35): warning CS0649: Полю "EndCardController._CTAButtonTextText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\PlayableSettings.cs(20,10): warning CS0649: Полю "PlayableSettings.m_ShowEndcardAfterXTaps" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(205,44): warning CS0649: Полю "EndCardController._descriptionRect" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(209,39): warning CS0649: Полю "EndCardController._iconImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(15,44): warning CS0649: Полю "LevelManager._tasksParent" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(21,40): warning CS0649: Полю "Board._tweenDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(12,41): warning CS0649: Полю "LevelManager._inactiveStarSprite" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(45,18): warning CS0649: Полю "EndCardController._useBestFitOnCTA" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\LevelSelectionManager.cs(11,52): warning CS0649: Полю "LevelSelectionManager._levels" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(11,49): warning CS0649: Полю "MainScreen._chatButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(17,43): warning CS0649: Полю "LevelButton._levelNumber" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(16,50): warning CS0649: Полю "LevelManager._levelComplete" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(14,41): warning CS0649: Полю "LevelTaskBox._checkedIcon" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(208,39): warning CS0649: Полю "EndCardController._endCardAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(20,45): warning CS0649: Полю "LevelButton._lockedState" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(54,18): warning CS0649: Полю "EndCardController._CTAFont" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(210,39): warning CS0649: Полю "EndCardController._CTAButtonImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(25,39): warning CS0649: Полю "Board._ensureNoStartingMatches" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(204,44): warning CS0649: Полю "EndCardController._iconRectMask" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(23,37): warning CS0169: Поле "LevelButton._settings" никогда не используется. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(206,44): warning CS0649: Полю "EndCardController._buttonRect" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(57,18): warning CS0649: Полю "EndCardController._descriptionFont" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(10,42): warning CS0649: Полю "LevelManager._stars" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(15,40): warning CS0649: Полю "StartGamePopup._rightStarImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\PlayableSettings.cs(8,35): warning CS0649: Полю "PlayableSettings.m_SkipMainMenu" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Settings\SettingsProvider.cs(26,54): warning CS0649: Полю "SettingsProvider._settingsList" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(198,37): warning CS0649: Полю "EndCardController._CTAButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(13,39): warning CS0649: Полю "LevelTaskBox._currentTileCountText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(17,44): warning CS0649: Полю "Board._rows" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(27,21): warning CS0649: Полю "EndCardController._iconTexture" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(186,33): warning CS0649: Полю "EndCardController._buttonAnimationType" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(12,39): warning CS0649: Полю "LevelTaskBox._missionCountText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Settings\SettingsProvider.cs(23,31): warning CS0414: Полю "SettingsProvider._containerName" присвоено значение, но оно ни разу не использовано. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - Scripts
+
+_CopyFilesMarkedCopyLocal:
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge
+.WebGL.dll".
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Создание "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date", так как было задано "AlwaysCreate".
+
+  Обращение к "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date".
+
+CopyFilesToOutputDirectory:
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Scripts -> D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+
+  Копирование файла из "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" в "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+Сборка проекта "D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" завершена (целевые объекты Rebuild).
+
+
+Сборка успешно завершена.
+
+
+
+"D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (целевой объект Rebuild ) (1) ->
+(Целевой объект CoreCompile) -> 
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Navigation\NavigationController.cs(12,45): warning CS0649: Полю "NavigationController._canvas" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(189,42): warning CS0649: Полю "EndCardController._endCardPortraitAnimationType" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(207,39): warning CS0649: Полю "EndCardController._CTAButtonAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(10,49): warning CS0649: Полю "MainScreen._settingsButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(9,41): warning CS0649: Полю "LevelManager._progressSlider" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(14,40): warning CS0649: Полю "StartGamePopup._middleStarImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(9,49): warning CS0649: Полю "MainScreen._startButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(13,40): warning CS0649: Полю "StartGamePopup._leftStarImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(196,22): warning CS0649: Полю "EndCardController._backgroundImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(19,47): warning CS0649: Полю "LevelManager._boxPrefab" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(18,40): warning CS0649: Полю "LevelButton._currentStateColor" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(16,40): warning CS0649: Полю "LevelButton._levelSprite" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(192,43): warning CS0649: Полю "EndCardController._endCardLandscapeAnimationType" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(14,43): warning CS0649: Полю "LevelManager._movesCountText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(12,49): warning CS0649: Полю "MainScreen._spinWheelButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D
+:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(23,48): warning CS0649: Полю "Board._swappingOverlay" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(15,41): warning CS0649: Полю "LevelButton._button" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(199,37): warning CS0649: Полю "EndCardController._ScreenCTAButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(17,45): warning CS0649: Полю "LevelManager._disableBoard" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(33,21): warning CS0649: Полю "EndCardController._buttonTexture" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(202,35): warning CS0649: Полю "EndCardController._maskIcon" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(15,49): warning CS0649: Полю "MainScreen._pauseButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(14,49): warning CS0649: Полю "MainScreen._helpButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(19,45): warning CS0649: Полю "LevelButton._shine" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(201,35): warning CS0649: Полю "EndCardController._EndCardDescriptionTextText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(11,36): warning CS0649: Полю "LevelTaskBox._tileImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(18,40): warning CS0649: Полю "LevelManager._currentLevel" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(21,21): warning CS0649: Полю "EndCardController._backgroundTexture" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(203,44): warning CS0649: Полю "EndCardController._iconRect" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(11,41): warning CS0649: Полю "LevelManager._activeStarSprite" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(21,46): warning CS0649: Полю "LevelButton._stars" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(11,40): warning CS0649: Полю "StartGamePopup._disabledColor" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(10,40): warning CS0649: Полю "StartGamePopup._enabledColor" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(19,47): warning CS0649: Полю "Board._levelManager" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(13,49): warning CS0649: Полю "MainScreen._infoButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\PlayableSettings.cs(11,35): warning CS0649: Полю "PlayableSettings.m_UseCTAScreen" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(200,35): warning CS0649: Полю "EndCardController._CTAButtonTextText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\PlayableSettings.cs(20,10): warning CS0649: Полю "PlayableSettings.m_ShowEndcardAfterXTaps" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(205,44): warning CS0649: Полю "EndCardController._descriptionRect" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(209,39): warning CS0649: Полю "EndCardController._iconImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(15,44): warning CS0649: Полю "LevelManager._tasksParent" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(21,40): warning CS0649: Полю "Board._tweenDuration" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию 0. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(12,41): warning CS0649: Полю "LevelManager._inactiveStarSprite" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(45,18): warning CS0649: Полю "EndCardController._useBestFitOnCTA" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\LevelSelectionManager.cs(11,52): warning CS0649: Полю "LevelSelectionManager._levels" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Screens\MainScreen.cs(11,49): warning CS0649: Полю "MainScreen._chatButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(17,43): warning CS0649: Полю "LevelButton._levelNumber" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.cs(16,50): warning CS0649: Полю "LevelManager._levelComplete" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(14,41): warning CS0649: Полю "LevelTaskBox._checkedIcon" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(208,39): warning CS0649: Полю "EndCardController._endCardAnimator" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(20,45): warning CS0649: Полю "LevelButton._lockedState" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(54,18): warning CS0649: Полю "EndCardController._CTAFont" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(210,39): warning CS0649: Полю "EndCardController._CTAButtonImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(25,39): warning CS0649: Полю "Board._ensureNoStartingMatches" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(204,44): warning CS0649: Полю "EndCardController._iconRectMask" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Buttons\LevelButton.cs(23,37): warning CS0169: Поле "LevelButton._settings" никогда не используется. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(206,44): warning CS0649: Полю "EndCardController._buttonRect" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(57,18): warning CS0649: Полю "EndCardController._descriptionFont" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\LevelManager.ProgressBar.cs(10,42): warning CS0649: Полю "LevelManager._stars" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\UI\Popups\StartGamePopup.cs(15,40): warning CS0649: Полю "StartGamePopup._rightStarImage" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\PlayableSettings.cs(8,35): warning CS0649: Полю "PlayableSettings.m_SkipMainMenu" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию false. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Settings\SettingsProvider.cs(26,54): warning CS0649: Полю "SettingsProvider._settingsList" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(198,37): warning CS0649: Полю "EndCardController._CTAButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(13,39): warning CS0649: Полю "LevelTaskBox._currentTileCountText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Match3\Core\Board.cs(17,44): warning CS0649: Полю "Board._rows" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\M
+atch3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(27,21): warning CS0649: Полю "EndCardController._iconTexture" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\EndCardController.cs(186,33): warning CS0649: Полю "EndCardController._buttonAnimationType" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию . [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\LevelTaskBox.cs(12,39): warning CS0649: Полю "LevelTaskBox._missionCountText" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\Git\SoloProjects\Match3\LunaTemp\stage3\processed-scripts\Assets\Scripts\Settings\SettingsProvider.cs(23,31): warning CS0414: Полю "SettingsProvider._containerName" присвоено значение, но оно ни разу не использовано. [D:\Git\SoloProjects\Match3\Packages\6.4.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    Предупреждений: 69
+    Ошибок: 0
+
+Прошло времени 00:00:05.68
+
+Source code compiled successfully!
+﻿
+[ error ] $﻿
+Diagnostics gathered successfully
+report@code:build 9643.02
+report@diagnostics:verify 0.50
+report@diagnostics:upload 2012.63
+report@code:stage 2509.54
+[ Stage3 ] Code compiled and bundled successfully.
+report@code:bundle 14274.41
+report@package:stage 543.90
+[ Stage4 ] Target platform: develop
+[ Stage4 ] Package bundled successfully
+report@assets:stats 0.07

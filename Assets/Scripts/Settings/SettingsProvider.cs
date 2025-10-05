@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using Utils;
 
 namespace Settings
 {
-    [CreateAssetMenu(fileName = "SettingsProvider", menuName = "Match3/SettingsProvider", order = 0)]
-    public class SettingsProvider : ScriptableObject
+    public class SettingsProvider : MonoSingleton<SettingsProvider>
     {
         [ContextMenu("Sort alphabetically")]
         public void SortAlphabetically()
@@ -21,10 +21,16 @@ namespace Settings
         }
 
         private static string _containerName = "SettingsProvider";
-        private static Dictionary<Type, ScriptableObject> _settings;
+        private static Dictionary<Type, MonoBehaviour> _settings;
         
-        [SerializeField] private List<ScriptableObject> _settingsList;
-        public List<ScriptableObject> SettingsList => _settingsList;
+        [SerializeField] private List<MonoBehaviour> _settingsList;
+        public List<MonoBehaviour> SettingsList => _settingsList;
+
+        protected override void Awake()
+        {
+            base.Awake();
+            _settings = SettingsList.ToDictionary(x => x.GetType(), x => x);
+        }
 
         [ContextMenu("Check list for identical types")]
         public void CheckTypes()
@@ -41,33 +47,9 @@ namespace Settings
             }
             
         }
-        
-        private static void CheckSettings()
-        {
-            if (_settings != null)
-                return;
-            
-            var settingsContainer = Resources.Load<SettingsProvider>(_containerName);
-            SetupSettings(settingsContainer);
-        }
-        
-        private static void SetupSettings(SettingsProvider settingsContainer)
-        {
-            try
-            {
-                _settings = settingsContainer.SettingsList.ToDictionary(x => x.GetType(), x => x);
-            }
-            catch (Exception e)
-            {
-                Debug.LogError(e);
-                throw;
-            }
-        }
 
-        public static T Get<T>() where T : ScriptableObject
+        public static T Get<T>() where T : MonoBehaviour
         {
-            CheckSettings();
-
             if (_settings.ContainsKey(typeof(T)))
             {
                 return (T)_settings[typeof(T)];

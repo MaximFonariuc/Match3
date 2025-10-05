@@ -16,8 +16,7 @@ public class LevelTaskBox : BasePrefabs
     private int _currentTileCount;
     private int _missionTileCount;
     private LevelTaskBoxSettings _settings;
-   
-
+    
     public void SetupCurrentTileText(int count)
     {
         _currentTileCount += count;
@@ -27,7 +26,7 @@ public class LevelTaskBox : BasePrefabs
             if (_currentTileCount >= _missionTileCount && !_checkedIcon.activeSelf)
             {
                 _checkedIcon.SetActive(true);
-                LevelManager.SetupMission();
+                LevelManager.Instance.SetupMission();
             }
         }
     } 

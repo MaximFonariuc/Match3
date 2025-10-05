@@ -20,7 +20,7 @@ namespace Match3
 
         [SerializeField] private float _tweenDuration;
 
-        [SerializeField] private Transform _swappingOverlay;
+        [SerializeField] private RectTransform _swappingOverlay;
 
         [SerializeField] private bool _ensureNoStartingMatches;
         
@@ -67,14 +67,17 @@ namespace Match3
                     tile.X = x;
                     tile.Y = y;
 
-                    tile.Type = _tileTypes[Random.Range(0, _tileTypes.Count)];
-                    tile.Button.onClick.AddListener(() => Select(tile));
+                    tile.TileType = _tileTypes[Random.Range(0, _tileTypes.Count)];
+                    tile.Init(this);
                 }
             }
 
             if (_ensureNoStartingMatches)
+            {
                 StartCoroutine(EnsureNoStartingMatches());
-            OnMatch += (type, count) => Debug.Log($"Matched {count}x {type.name}.");
+            }
+
+            OnMatch += (type, count) => Debug.Log($"Matched {count}x {type.TileType}.");
             OnMatch += (type, count) => _levelManager.UpdateDestroyedTilesCount(type, count);
         }
 
@@ -118,11 +121,33 @@ namespace Match3
             return tiles;
         }
 
+        public async void TrySwipe(Tile origin, int dx, int dy)
+        {
+            if (_isSwapping || _isMatching || _isShuffling)
+                return;
+
+            int targetX = origin.X + dx;
+            int targetY = origin.Y + dy;
+
+            if (targetX < 0 || targetY < 0 || targetY >= _rows.Count || targetX >= _rows[targetY].Tiles.Count)
+                return;
+
+            var target = GetTile(targetX, targetY);
+
+            await SwapAsync(origin, target);
+            _levelManager.SetupCurrentMovesText();
+
+            if (!await TryMatchAsync())
+            {
+                await SwapAsync(origin, target);
+            }
+        }
+
         private async void Select(Tile tile)
         {
             if (_isSwapping || _isMatching || _isShuffling)
                 return;
-            
+
             if (!_selection.Contains(tile))
             {
                 if (_selection.Count > 0)
@@ -147,29 +172,13 @@ namespace Match3
                 return;
 
             await SwapAsync(_selection[0], _selection[1]);
-            
-            //to do: доделать обработку комбинацию из 4-х
-            /*if (IsFourTileCombination(_selection.ToArray()))
-            {
-                var swappedTile = _selection[0].X < _selection[1].X ? _selection[0] : _selection[1];
-                if (_selection[0].X == _selection[1].X)
-                {
-                    swappedTile.Type = _tileTypes.Find(tileType => tileType.TileAbility == EAbility.HorizontalLightning);
-                }
-                else
-                {
-                    swappedTile.Type = _tileTypes.Find(tileType => tileType.TileAbility == EAbility.VerticalLightning);
-                }
-            }*/
+            _levelManager.SetupCurrentMovesText();
 
             if (!await TryMatchAsync())
             {
-                _levelManager.SetupCurrentMovesText();
                 await SwapAsync(_selection[0], _selection[1]);
             }
-            else
-                _levelManager.SetupCurrentMovesText();
-            
+
             var matrix = Matrix;
 
             while (TileDataMatrixUtility.FindBestMove(matrix) == null ||
@@ -188,14 +197,14 @@ namespace Match3
             return Math.Abs(tile1.X - tile2.X) == 1 && Math.Abs(tile1.Y - tile2.Y) == 0
                    || Math.Abs(tile1.Y - tile2.Y) == 1 && Math.Abs(tile1.X - tile2.X) == 0;
         }
-        
+
         private bool IsFourTileCombination(Tile[] tiles)
         {
             if (tiles.Length != 4)
                 return false;
 
-            var firstTileType = tiles[0].Type;
-            if (tiles.Any(tile => tile.Type != firstTileType))
+            var firstTileType = tiles[0].TileType;
+            if (tiles.Any(tile => tile.TileType != firstTileType))
                 return false;
 
             var horizontalOrder = tiles.OrderBy(tile => tile.X).ToArray();
@@ -216,49 +225,49 @@ namespace Match3
 
             return false;
         }
-
-
+        
         private async Task SwapAsync(Tile tile1, Tile tile2)
         {
-            if (this != null)
-            {
-                _isSwapping = true;
+            if (this == null)
+                return;
 
-                var icon1 = tile1.Icon;
-                var icon2 = tile2.Icon;
+            _isSwapping = true;
 
-                var icon1Transform = icon1.transform;
-                var icon2Transform = icon2.transform;
+            var icon1 = tile1.Icon;
+            var icon2 = tile2.Icon;
 
-                icon1Transform.SetParent(_swappingOverlay);
-                icon2Transform.SetParent(_swappingOverlay);
+            var icon1Transform = icon1.transform;
+            var icon2Transform = icon2.transform;
 
-                icon1Transform.SetAsLastSibling();
-                icon2Transform.SetAsLastSibling();
+            icon1Transform.SetParent(_swappingOverlay);
+            icon2Transform.SetParent(_swappingOverlay);
 
-                var sequence = DOTween.Sequence();
+            icon1Transform.SetAsLastSibling();
+            icon2Transform.SetAsLastSibling();
 
-                sequence.Join(icon1Transform.DOMove(icon2Transform.position, _tweenDuration).SetEase(Ease.OutBack))
-                    .Join(icon2Transform.DOMove(icon1Transform.position, _tweenDuration).SetEase(Ease.OutBack));
+            var sequence = DOTween.Sequence();
 
-                await sequence.Play().AsyncWaitForCompletion();
+            sequence.Join(icon1Transform.DOMove(icon2Transform.position, _tweenDuration).SetEase(Ease.OutBack))
+                .Join(icon2Transform.DOMove(icon1Transform.position, _tweenDuration).SetEase(Ease.OutBack));
+            
+            await sequence.Play().AsyncWaitForCompletion();
 
-                icon1Transform.SetParent(tile2.transform);
-                icon2Transform.SetParent(tile1.transform);
+            icon1Transform.SetParent(tile2.transform);
+            icon2Transform.SetParent(tile1.transform);
 
-                tile1.Icon = icon2;
-                tile2.Icon = icon1;
+            tile1.Icon = icon2;
+            tile2.Icon = icon1;
 
-                (tile1.Type, tile2.Type) = (tile2.Type, tile1.Type);
-                _isSwapping = false;
-                
-            }
+            var temp = tile1.TileType;
+            tile1.TileType = tile2.TileType;
+            tile2.TileType = temp;
+            
+            _isSwapping = false;
         }
 
         private async Task<bool> TryMatchAsync()
         {
             var didMatch = false;
-
             _isMatching = true;
 
             var match = TileDataMatrixUtility.FindBestMatch(Matrix);
@@ -266,20 +275,25 @@ namespace Match3
             while (match != null)
             {
                 didMatch = true;
-
                 var tiles = GetTiles(match.Tiles);
 
                 var deflateSequence = DOTween.Sequence();
-
                 foreach (var tile in tiles)
-                    deflateSequence.Join(tile.Icon.transform.DOScale(Vector3.zero, _tweenDuration)
-                        .SetEase(Ease.InBack));
+                {
+                    if (tile == null || tile.Icon == null)
+                        continue;
 
+                    deflateSequence.Join(
+                        tile.Icon.transform.DOScale(Vector3.zero, _tweenDuration)
+                            .SetEase(Ease.InBack)
+                    );
+                }
+                
                 await deflateSequence.Play().AsyncWaitForCompletion();
-
+                
                 var inflateSequence = DOTween.Sequence();
 
-                bool isHorizontal = tiles.All(t => t.Y == tiles[0].Y & t.Y != 0);
+                bool isHorizontal = tiles.All(t => t.Y == tiles[0].Y && t.Y != 0);
                 bool isVertical = tiles.All(t => t.X == tiles[0].X);
 
                 if (isVertical)
@@ -288,19 +302,26 @@ namespace Match3
                     for (int i = 0; i < tiles.Length; i++)
                     {
                         var currentTile = GetTile(tiles[i].X, tiles[i].Y);
+                        if (currentTile == null || currentTile.Icon == null)
+                            continue;
+
                         if (tiles[0].Y != 0)
                         {
                             var previousTile = GetTile(tiles[i].X, i);
-                            currentTile.Type = previousTile.Type;
+                            if (previousTile == null || previousTile.Icon == null)
+                                continue;
+
+                            currentTile.TileType = previousTile.TileType;
                             inflateSequence.Join(currentTile.Icon.transform.DOScale(Vector3.one, _tweenDuration)
                                 .SetEase(Ease.OutBack));
-                            previousTile.Type = _tileTypes[Random.Range(0, _tileTypes.Count)];
+
+                            previousTile.TileType = _tileTypes[Random.Range(0, _tileTypes.Count)];
                             inflateSequence.Join(previousTile.Icon.transform.DOScale(Vector3.one, _tweenDuration)
                                 .SetEase(Ease.OutBack));
                         }
                         else
                         {
-                            currentTile.Type = _tileTypes[Random.Range(0, _tileTypes.Count)];
+                            currentTile.TileType = _tileTypes[Random.Range(0, _tileTypes.Count)];
                             inflateSequence.Join(currentTile.Icon.transform.DOScale(Vector3.one, _tweenDuration)
                                 .SetEase(Ease.OutBack));
                         }
@@ -308,23 +329,26 @@ namespace Match3
                 }
                 else if (isHorizontal)
                 {
-                    Tile currentTile = null;
-                    Tile previousTile = null;
                     for (int j = 0; j < tiles.Length; j++)
                     {
                         for (int i = 0; i < tiles[0].Y; i++)
                         {
-                            currentTile = GetTile(tiles[j].X, tiles[j].Y - i);
-                            previousTile = GetTile(tiles[j].X, tiles[j].Y - i - 1);
-                            currentTile.Type = previousTile.Type;
+                            var currentTile = GetTile(tiles[j].X, tiles[j].Y - i);
+                            var previousTile = GetTile(tiles[j].X, tiles[j].Y - i - 1);
+                            if (currentTile == null || previousTile == null || currentTile.Icon == null ||
+                                previousTile.Icon == null)
+                                continue;
+
+                            currentTile.TileType = previousTile.TileType;
                             inflateSequence.Join(currentTile.Icon.transform.DOScale(Vector3.one, _tweenDuration)
                                 .SetEase(Ease.OutBack));
                         }
 
-                        if (currentTile != null)
+                        var topTile = GetTile(tiles[j].X, 0);
+                        if (topTile != null && topTile.Icon != null)
                         {
-                            previousTile.Type = _tileTypes[Random.Range(0, _tileTypes.Count)];
-                            inflateSequence.Join(previousTile.Icon.transform.DOScale(Vector3.one, _tweenDuration)
+                            topTile.TileType = _tileTypes[Random.Range(0, _tileTypes.Count)];
+                            inflateSequence.Join(topTile.Icon.transform.DOScale(Vector3.one, _tweenDuration)
                                 .SetEase(Ease.OutBack));
                         }
                     }
@@ -333,24 +357,29 @@ namespace Match3
                 {
                     foreach (var tile in tiles)
                     {
-                        tile.Type = _tileTypes[Random.Range(0, _tileTypes.Count)];
+                        if (tile == null || tile.Icon == null)
+                            continue;
+
+                        tile.TileType = _tileTypes[Random.Range(0, _tileTypes.Count)];
                         inflateSequence.Join(tile.Icon.transform.DOScale(Vector3.one, _tweenDuration)
                             .SetEase(Ease.OutBack));
                     }
                 }
 
                 await inflateSequence.Play().AsyncWaitForCompletion();
-
-                OnMatch?.Invoke(Array.Find(_tileTypes.ToArray(), tileType => tileType.TileType == match.TypeId),
-                    match.Tiles.Length);
+                
+                OnMatch?.Invoke(
+                    Array.Find(_tileTypes.ToArray(), tileType => tileType.TileType == match.TypeId),
+                    match.Tiles.Length
+                );
 
                 match = TileDataMatrixUtility.FindBestMatch(Matrix);
             }
 
             _isMatching = false;
-
             return didMatch;
         }
+
 
         private void Shuffle()
         {
@@ -358,7 +387,7 @@ namespace Match3
 
             foreach (var row in _rows)
             foreach (var tile in row.Tiles)
-                tile.Type = _tileTypes[Random.Range(0, _tileTypes.Count)];
+                tile.TileType = _tileTypes[Random.Range(0, _tileTypes.Count)];
 
             _isShuffling = false;
         }

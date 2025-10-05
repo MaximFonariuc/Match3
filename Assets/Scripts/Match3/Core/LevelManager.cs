@@ -5,17 +5,18 @@ using Scripts;
 using Settings;
 using TMPro;
 using UnityEngine;
+using Utils;
 
 namespace Match3.Core
 {
-    public class LevelManager : MonoBehaviour
+    public partial class LevelManager : MonoSingleton<LevelManager>
     {
         [SerializeField] private TMP_Text _movesCountText;
         [SerializeField] private Transform _tasksParent;
         [SerializeField] private SceneTransition _levelComplete;
         [SerializeField] private GameObject _disableBoard;
-
-        private Level _currentLevel;
+        [SerializeField] private Level _currentLevel;
+        [SerializeField] private LevelTaskBox _boxPrefab;
         private bool _levelCompleted;
         private static int _missionCompetedCount;
 
@@ -28,14 +29,19 @@ namespace Match3.Core
             _movesCountText.text = _movesCount.ToString();
         }
 
-        public static void SetupMission() => _missionCompetedCount++;
-
-        private void Awake()
+        public void SetupMission()
         {
-            _currentLevel = SettingsProvider.Get<LevelsData>().GetUnlockedTask();
+            _missionCompetedCount++;
+            AddProgress(1);
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+            
             foreach (var mission in _currentLevel.Missions)
             {
-                var taskBox = Instantiate(SettingsProvider.Get<PrefabSet>().GetPrefab<LevelTaskBox>(), _tasksParent);
+                var taskBox = Instantiate(_boxPrefab, _tasksParent);
                 taskBox.Setup(new LevelTaskBoxSettings
                 {
                     TileSprite = mission.TileType,
@@ -47,8 +53,10 @@ namespace Match3.Core
 
             _movesCount = _currentLevel.TotalMoves;
             _movesCountText.text = _movesCount.ToString();
-        }
 
+            InitProgressBar();
+        }
+        
         private void Update()
         {
             if (!_levelCompleted)
@@ -85,7 +93,6 @@ namespace Match3.Core
         {
             yield return new WaitForSeconds(2f);
             _levelComplete.PerformTransition();
-            SettingsProvider.Get<LevelsData>().SetNextLevelTypes(3,1500);
             _missionCompetedCount = 0;
             Debug.Log("Level Completed!");
         }

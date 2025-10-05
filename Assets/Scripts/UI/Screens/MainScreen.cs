@@ -27,8 +27,7 @@ namespace UI.Screens
 
         public override void Setup(ScreenSettings settings)
         {
-            if (settings is not MainScreenSettings mainScreenSettings)
-                return;
+            var mainScreenSettings = settings as MainScreenSettings;
 
             SelectTab(mainScreenSettings.TabType);
         }

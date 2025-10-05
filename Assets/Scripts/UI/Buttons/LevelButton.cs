@@ -27,19 +27,18 @@ namespace UI.Buttons
         private int _starsCount;
         private ELevelButtonType _levelButtonType;
         
-        public void Setup(LevelButtonSettings buttonSettings, Action onButtonClick = null)
+        public void Setup(ButtonSettings buttonSettings)
         {
-            if(buttonSettings is not LevelButtonSettings actionButtonSettings)
-                return;
+            var actionButtonSettings = buttonSettings as LevelButtonSettings;
             
-            _levelNumber.text = buttonSettings.LevelNumber.ToString();
-            _starsCount = buttonSettings.StarsCount;
-            _levelButtonType = buttonSettings.LevelButtonType;
+            _levelNumber.text = actionButtonSettings.LevelNumber.ToString();
+            _starsCount = actionButtonSettings.StarsCount;
+            _levelButtonType = actionButtonSettings.LevelButtonType;
             
             switch (_levelButtonType)
             {
                 case ELevelButtonType.Current:
-                    _levelSprite.sprite = buttonSettings.LevelSprite;
+                    _levelSprite.sprite = actionButtonSettings.LevelSprite;
                     _shine.SetActive(true);
                     _lockedState.SetActive(false);
                     
@@ -49,7 +48,7 @@ namespace UI.Buttons
                     _stars.ForEach(star => star.gameObject.SetActive(true));
                     for (int i = 0; i < _starsCount; i++)
                     {
-                        _stars[i].sprite = buttonSettings.StarsSprite[i];
+                        _stars[i].sprite = actionButtonSettings.StarsSprite[i];
                     }
                     break;
                 
@@ -60,7 +59,7 @@ namespace UI.Buttons
                     _stars.ForEach(star => star.gameObject.SetActive(true));
                     for (int i = 0; i < _starsCount; i++)
                     {
-                        _stars[i].sprite = buttonSettings.StarsSprite[i];
+                        _stars[i].sprite = actionButtonSettings.StarsSprite[i];
                     }
                     
                     break;

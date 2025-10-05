@@ -20,15 +20,12 @@ namespace Scripts
                 DontDestroyOnLoad(gameObject);
                 Instance = this;
                 m_audioSource = GetComponent<AudioSource>();
-                m_audioSource.ignoreListenerVolume = true;
-                m_audioSource.volume = PlayerPrefs.GetInt("music_on");
-                AudioListener.volume = PlayerPrefs.GetInt("sound_on");
             }
         }
 
         public void FadeIn()
         {
-            if (PlayerPrefs.GetInt("music_on") == 1)
+            if (PlayerPrefs.GetInt("music_on", 1) == 1)
             {
                 StartCoroutine(FadeAudio(1.0f, Fade.In));
             }
@@ -36,7 +33,7 @@ namespace Scripts
 
         public void FadeOut()
         {
-            if (PlayerPrefs.GetInt("music_on") == 1)
+            if (PlayerPrefs.GetInt("music_on", 1) == 0)
             {
                 StartCoroutine(FadeAudio(1.0f, Fade.Out));
             }

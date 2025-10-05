@@ -9,8 +9,7 @@ using UnityEngine;
 
 namespace Settings
 {
-    [CreateAssetMenu(fileName = "PrefabSet", menuName = "Match3/PrefabSet", order = 0)]
-    public class PrefabSet : ScriptableObject
+    public class PrefabSet : MonoBehaviour
     {
         [field: SerializeField] public List<BasePanel> Panels { private set; get; }
         [field: SerializeField] public List<DefaultScreen> Screens { private set; get; }

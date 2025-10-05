@@ -3,8 +3,7 @@ using UnityEngine;
 
 namespace Match3
 {
-    [CreateAssetMenu(fileName = "TileTypeDatas", menuName = "Match3/Tile/Tile Type Datas", order = 0)]
-    public sealed class TileTypeDatas : ScriptableObject
+    public sealed class TileTypeDatas : MonoBehaviour
     {
         public List<TileTypeData> TileDatas;
         

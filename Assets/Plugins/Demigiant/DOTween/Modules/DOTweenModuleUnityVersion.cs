@@ -209,20 +209,6 @@ namespace DG.Tweening
         #region Async Instructions
 
         /// <summary>
-        /// Returns an async <see cref="System.Threading.Tasks.Task"/> that waits until the tween is killed or complete.
-        /// It can be used inside an async operation.
-        /// <para>Example usage:</para><code>await myTween.WaitForCompletion();</code>
-        /// </summary>
-        public static async System.Threading.Tasks.Task AsyncWaitForCompletion(this Tween t)
-        {
-            if (!t.active) {
-                if (Debugger.logPriority > 0) Debugger.LogInvalidTween(t);
-                return;
-            }
-            while (t.active && !t.IsComplete()) await System.Threading.Tasks.Task.Yield();
-        }
-
-        /// <summary>
         /// Returns an async <see cref="System.Threading.Tasks.Task"/> that waits until the tween is killed or rewinded.
         /// It can be used inside an async operation.
         /// <para>Example usage:</para><code>await myTween.AsyncWaitForRewind();</code>
@@ -302,6 +288,19 @@ namespace DG.Tweening
 
         #endregion
 #endif
+        /// <summary>
+        /// Returns an async <see cref="System.Threading.Tasks.Task"/> that waits until the tween is killed or complete.
+        /// It can be used inside an async operation.
+        /// <para>Example usage:</para><code>await myTween.WaitForCompletion();</code>
+        /// </summary>
+        public static async System.Threading.Tasks.Task AsyncWaitForCompletion(this Tween t)
+        {
+            if (!t.active) {
+                if (Debugger.logPriority > 0) Debugger.LogInvalidTween(t);
+                return;
+            }
+            while (t.active && !t.IsComplete()) await System.Threading.Tasks.Task.Delay(1);
+        }
     }
 
     // █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████

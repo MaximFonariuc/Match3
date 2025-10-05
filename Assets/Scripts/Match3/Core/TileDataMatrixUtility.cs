@@ -85,14 +85,23 @@ namespace Match3
 			return bestMatch;
 		}
 
-		private static (int, int) GetDirectionOffset(byte direction) => direction switch
+		private static (int, int) GetDirectionOffset(byte direction)
 		{
-			0 => (-1, 0),
-			1 => (0, -1),
-			2 => (1, 0),
-			3 => (0, 1),
-			_ => (0, 0),
-		};
+			switch (direction)
+			{
+				case 0:
+					return (-1, 0);
+				case 1:
+					return (0, -1);
+				case 2:
+					return (1, 0);
+				case 3:
+					return (0, 1);
+				default:
+					return (0, 0);
+			}
+		}
+
 		public static Move FindBestMove(TileData[,] tiles)
 		{
 			var tilesCopy = (TileData[,])tiles.Clone();

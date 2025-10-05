@@ -15,33 +15,33 @@ MonoBehaviour:
   Tasks:
   - Missions:
     - TileType: 0
-      TargetCount: 5
-    - TileType: 2
-      TargetCount: 5
-    TotalMoves: 10
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 3
-  - Missions:
-    - TileType: 0
-      TargetCount: 10
-    - TileType: 2
-      TargetCount: 5
-    TotalMoves: 10
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
-  - Missions:
-    - TileType: 0
       TargetCount: 10
     - TileType: 2
       TargetCount: 5
     - TileType: 4
       TargetCount: 5
     TotalMoves: 10
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
+  - Missions:
+    - TileType: 0
+      TargetCount: 5
+    - TileType: 2
+      TargetCount: 5
+    TotalMoves: 10
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
+  - Missions:
+    - TileType: 0
+      TargetCount: 10
+    - TileType: 2
+      TargetCount: 5
+    TotalMoves: 10
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
   - Missions:
     - TileType: 0
       TargetCount: 10
@@ -50,9 +50,9 @@ MonoBehaviour:
     - TileType: 4
       TargetCount: 10
     TotalMoves: 10
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
   - Missions:
     - TileType: 0
       TargetCount: 15
@@ -61,9 +61,9 @@ MonoBehaviour:
     - TileType: 3
       TargetCount: 10
     TotalMoves: 15
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
   - Missions:
     - TileType: 0
       TargetCount: 15
@@ -72,9 +72,9 @@ MonoBehaviour:
     - TileType: 3
       TargetCount: 15
     TotalMoves: 15
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
   - Missions:
     - TileType: 4
       TargetCount: 15
@@ -83,9 +83,9 @@ MonoBehaviour:
     - TileType: 1
       TargetCount: 15
     TotalMoves: 20
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
   - Missions:
     - TileType: 3
       TargetCount: 20
@@ -94,9 +94,9 @@ MonoBehaviour:
     - TileType: 1
       TargetCount: 20
     TotalMoves: 20
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
   - Missions:
     - TileType: 2
       TargetCount: 25
@@ -105,9 +105,20 @@ MonoBehaviour:
     - TileType: 4
       TargetCount: 25
     TotalMoves: 25
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
+  - Missions:
+    - TileType: 3
+      TargetCount: 30
+    - TileType: 0
+      TargetCount: 30
+    - TileType: 2
+      TargetCount: 30
+    TotalMoves: 30
+    StarsCount: 3
+    Score: 1500
+    LevelButtonType: 2
   - Missions:
     - TileType: 3
       TargetCount: 30
@@ -118,18 +129,7 @@ MonoBehaviour:
     TotalMoves: 30
     StarsCount: 0
     Score: 0
-    LevelButtonType: 0
-  - Missions:
-    - TileType: 3
-      TargetCount: 30
-    - TileType: 0
-      TargetCount: 30
-    - TileType: 2
-      TargetCount: 30
-    TotalMoves: 30
-    StarsCount: 0
-    Score: 0
-    LevelButtonType: 0
+    LevelButtonType: 3
   - Missions:
     - TileType: 3
       TargetCount: 30

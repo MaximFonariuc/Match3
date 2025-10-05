@@ -8,8 +8,7 @@ using UnityEngine;
 
 namespace Match3.Settings
 {
-    [CreateAssetMenu(fileName = "LevelsData", menuName = "Match3/Levels Data")]
-    public class LevelsData : ScriptableObject
+    public class LevelsData : MonoBehaviour
     {
         public List<Level> Tasks;
 

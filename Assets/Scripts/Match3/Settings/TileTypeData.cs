@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Match3
 {
-	[CreateAssetMenu(fileName = "TileTypeData", menuName = "Match3/Tile/Tile Type Data", order = 0)]
-	public sealed class TileTypeData : ScriptableObject
+	[Serializable]
+	public sealed class TileTypeData
 	{
 		public ETileType TileType;
 		public EAbility TileAbility;

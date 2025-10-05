@@ -2780,7 +2780,7 @@ Deserializers.unityVersion = "2022.3.62f2";
 
 Deserializers.productName = "Match3";
 
-Deserializers.lunaInitializationTime = "";
+Deserializers.lunaInitializationTime = "10/04/2025 19:22:36";
 
 Deserializers.lunaDaysRunning = "0.8";
 
@@ -2828,7 +2828,7 @@ Deserializers.isLunaCompilerV2Used = "False";
 
 Deserializers.companyName = "DefaultCompany";
 
-Deserializers.buildPlatform = "StandaloneWindows64";
+Deserializers.buildPlatform = "Android";
 
 Deserializers.applicationIdentifier = "com.DefaultCompany.Match3";
 
@@ -2838,7 +2838,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "1c8402e2-b91b-4c71-8af6-7867a517f762";
+Deserializers.buildID = "089b0992-4a4b-4e3e-87aa-8e932ad30a03";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["UnityEngine","InputSystem","InputSystem","RunInitialUpdate"],["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"],["TargetFrameRateSetter","Initialize"]],[["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"]],[],[["UnityEngine","InputSystem","InputSystem","RunInitializeInPlayer"]]];
 

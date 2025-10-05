@@ -28,6 +28,8 @@
 2. В появившемся окне войди под своей учетной записью Unity Playworks.  
    ![Login](./Screenshots/3.LogIn.png)
 
+### 3.1 Попробуй открыть уже собранный билд или собери свежий (см. пункты 4-5)
+   ![Try Open Build](./Screenshots/3.1.TryOpenBuild.png)
 ---
 
 ## 4. Настройка проекта перед сборкой
@@ -49,9 +51,6 @@
 
 ## 5. Проверка сборки
 
-### 5.1 Попробуй открыть билд
-   ![Try Open Build](./Screenshots/5.1.TryOpenBuild.png)
-
 ### 5.2 Открой новый билд
    ![Open New Build](./Screenshots/5.2.OpenNewBuild.png)
 
@@ -72,7 +71,7 @@
    ![Loading For Playworks](./Screenshots/6.1.LoadingForPlayworks.png)
 
 ### 6.2 Открытие Playworks Editor
-   ![Open Playworks](./Screenshots/6.2.OpenPlayworks.png)
+   ![Open Playworks](./Screenshots/6.2.OpenPlayWorks.png)
 
 ### 6.3 Открытие проекта в Playworks
    ![Open Project](./Screenshots/6.3.OpenProject.png)
@@ -92,7 +91,7 @@
 ## 7. Подготовка и загрузка ZIP
 
 1. Сохрани билд и упакуй его в `.zip`.  
-   ![Upload ZIP](./Screenshots/7.1.UploadZIP.png)
+   ![Upload ZIP](./Screenshots/7.UploadZIP.png)
 2. Добавь временный ZIP в Playworks.  
    ![Add Temp ZIP Build](./Screenshots/7.1.AddTempZIPBuild.png)
 3. Создай новый концепт.  
@@ -105,7 +104,7 @@
 ## 8. Использование готового креатива
 
 Открой созданный креатив и протестируй его в Playworks Dashboard.  
-   ![Use In Work](./Screenshots/9.UseInWork.png)
+   ![Use In Work](./Screenshots/8.UseInWork.png)
 
 ---
 
